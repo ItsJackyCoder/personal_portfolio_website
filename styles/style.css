@@ -71,7 +71,7 @@ body main section.main-area div.info h1::before {
   top: 30%;
   width: 100%;
   height: 35%;
-  background-color: lightblue;
+  background-color: rgba(136, 196, 136, 0.649);
   z-index: -1;
   border-radius: 10px;
 }
@@ -197,138 +197,149 @@ body main section.picture div.greenRect3 {
   left: -100px;
   z-index: -1;
 }
-body main section.first-portfolio {
+body main.portfolio section.first-portfolio {
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(231, 255, 233);
 }
-body main section.first-portfolio div.description {
+body main.portfolio section.first-portfolio div.description {
   flex: 1 1 300px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body main section.first-portfolio div.description h2 {
+body main.portfolio section.first-portfolio div.description h2 {
   text-align: center;
   margin-bottom: 1.5rem;
 }
-body main section.first-portfolio div.description h2 a {
+body main.portfolio section.first-portfolio div.description h2 a {
   font-size: 2rem;
   text-decoration: none;
   color: black;
 }
-body main section.first-portfolio div.description p {
+body main.portfolio section.first-portfolio div.description p {
   font-size: 1rem;
 }
-body main section.first-portfolio div.image {
+body main.portfolio section.first-portfolio div.image {
   flex: 5 1 500px;
 }
-body main section.first-portfolio div.image img {
+body main.portfolio section.first-portfolio div.image img {
   width: 100%;
 }
-body main section.second-portfolio {
+body main.portfolio section.second-portfolio {
   display: flex;
   flex-wrap: wrap;
   background-color: white;
 }
-body main section.second-portfolio div.description {
+body main.portfolio section.second-portfolio div.description {
   flex: 1 1 300px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body main section.second-portfolio div.description h2 {
+body main.portfolio section.second-portfolio div.description h2 {
   text-align: center;
   margin-bottom: 1.5rem;
 }
-body main section.second-portfolio div.description h2 a {
+body main.portfolio section.second-portfolio div.description h2 a {
   font-size: 2rem;
   text-decoration: none;
   color: black;
 }
-body main section.second-portfolio div.description p {
+body main.portfolio section.second-portfolio div.description p {
   font-size: 1rem;
 }
-body main section.second-portfolio div.images {
+body main.portfolio section.second-portfolio div.images {
   flex: 5 1 500px;
   display: flex;
 }
-body main section.second-portfolio div.images div {
+body main.portfolio section.second-portfolio div.images div {
   flex: 1 1 200px;
 }
-body main section.second-portfolio div.images div img {
+body main.portfolio section.second-portfolio div.images div img {
   width: 100%;
   padding-right: 0.5rem;
 }
-body main section.third-portfolio {
+body main.portfolio section.third-portfolio {
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(231, 255, 233);
 }
-body main section.third-portfolio div.description {
+body main.portfolio section.third-portfolio div.description {
   flex: 1 1 300px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body main section.third-portfolio div.description h2 {
+body main.portfolio section.third-portfolio div.description h2 {
   text-align: center;
   margin-bottom: 1.5rem;
 }
-body main section.third-portfolio div.description h2 a {
+body main.portfolio section.third-portfolio div.description h2 a {
   font-size: 2rem;
   text-decoration: none;
   color: black;
 }
-body main section.third-portfolio div.description p {
+body main.portfolio section.third-portfolio div.description p {
   font-size: 1rem;
 }
-body main section.third-portfolio div.image {
+body main.portfolio section.third-portfolio div.image {
   flex: 5 1 500px;
   display: flex;
 }
-body main section.third-portfolio div.image div {
+body main.portfolio section.third-portfolio div.image div {
   flex: 1 1 150px;
 }
-body main section.third-portfolio div.image div img {
+body main.portfolio section.third-portfolio div.image div img {
   width: 100%;
   padding-left: 0.5rem;
 }
-body main section.fourth-portfolio {
+body main.portfolio section.fourth-portfolio {
   display: flex;
   flex-wrap: wrap;
   background-color: white;
 }
-body main section.fourth-portfolio div.description {
+body main.portfolio section.fourth-portfolio div.description {
   flex: 1 1 300px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body main section.fourth-portfolio div.description h2 {
+body main.portfolio section.fourth-portfolio div.description h2 {
   text-align: center;
   margin-bottom: 1.5rem;
 }
-body main section.fourth-portfolio div.description h2 a {
+body main.portfolio section.fourth-portfolio div.description h2 a {
   font-size: 2rem;
   text-decoration: none;
   color: black;
 }
-body main section.fourth-portfolio div.description p {
+body main.portfolio section.fourth-portfolio div.description p {
   font-size: 1rem;
 }
-body main section.fourth-portfolio div.images {
+body main.portfolio section.fourth-portfolio div.images {
   flex: 5 1 500px;
 }
-body main section.fourth-portfolio div.images img {
+body main.portfolio section.fourth-portfolio div.images img {
   width: 100%;
 }
+body main.portfolio h2.title {
+  border: 1px solid gary;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px gray, inset 0px 10px 30px 5px rgb(255, 255, 255);
+  padding: 0.3rem;
+}
+body main.portfolio h2.title a {
+  font-family: "Schoolbell", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1076px) {
   body main section.about-me section.description {
     width: 80%;
   }
