@@ -152,11 +152,22 @@ body main section.resume section.table table tr td ul {
 body main section.picture {
   flex: 1 1 500px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 body main section.picture img {
+  width: 80%;
+}
+body main section.picture p {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  text-align: center;
+  color: rgb(108, 106, 106);
   width: 80%;
 }
 body main section.picture div.greenRect {

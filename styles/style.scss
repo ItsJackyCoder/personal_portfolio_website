@@ -225,6 +225,7 @@ body {
 
       //為了把照片放在中央,而設定成display: flex
       display: flex;
+      flex-direction: column;
       justify-content: center;
 
       //因為align-items預設是stretch,所以要是沒設定它的話,
@@ -236,8 +237,21 @@ body {
       //flex container)
       position: relative;
 
+      display: flex;
+      flex-direction: column;
       img {
         width: 80%; //section.picture的80%
+      }
+
+      p {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        padding: 0 1rem;
+
+        text-align: center;
+        color: rgb(108, 106, 106);
+
+        width: 80%;
       }
 
       div.greenRect {
