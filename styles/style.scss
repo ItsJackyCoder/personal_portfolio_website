@@ -1,0 +1,501 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  //我自己想設定的字體哈哈(for 中文)
+  // font-family: "LXGW WenKai TC", cursive;
+  // font-weight: 400;
+  // font-style: normal;
+
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.special-font {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  //讓綠色框框多出來的部分隱藏掉,而不顯示horizontal scrollbar
+
+  overflow-x: hidden;
+  nav {
+    background-color: white;
+
+    //固定nav bar
+    position: sticky;
+    top: 0;
+
+    //設定一個很大的數字,就會蓋在所有的內容上面了!
+    z-index: 5;
+
+    ul {
+      display: flex;
+
+      li {
+        list-style-type: none;
+        margin: 1rem;
+
+        a {
+          color: black;
+          text-decoration: none;
+
+          transition: all 0.1s ease;
+
+          &:hover {
+            color: rgb(12, 144, 16);
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    section.main-area {
+      //設定70vh的原因:讓使用者一進入網頁時,看到的最大版面就是我們的個人照片+文字
+      min-height: 70vh;
+      background-color: white;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      div.info {
+        flex-basis: 620px;
+
+        padding: 1rem;
+        text-align: center;
+
+        h1 {
+          font-size: 3.5rem;
+
+          display: inline-block;
+          position: relative;
+          z-index: 1;
+
+          //設定h1 tag的背景顏色
+          &::before {
+            //這裡的%是參考h1的
+            content: "";
+            position: absolute;
+            top: 30%;
+            width: 100%;
+            height: 35%;
+            background-color: lightblue;
+            z-index: -1;
+            border-radius: 10px;
+          }
+        }
+
+        h2 {
+          font-size: 2rem;
+        }
+
+        a {
+          color: white;
+          background-color: rgb(12, 144, 16);
+
+          padding: 0.25rem 0.5rem;
+          border-radius: 20px;
+          font-size: 1.5rem;
+
+          //一定要把display改成非inline的,這樣margin-top才有效果
+          //(參考IPAD chapter3 p.79的表格)
+          display: inline-block;
+          margin-top: 2rem;
+
+          text-decoration: none;
+          transition: all 0.2s ease;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+
+      div.img-area {
+        //為了方便看出區塊在哪裡而設置了border
+        //border: 2px solid red;
+
+        flex-basis: 460px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    section.about-me {
+      background-color: rgb(231, 255, 233);
+      padding: 5rem 0rem;
+
+      display: flex;
+      justify-content: center;
+
+      section.description {
+        //希望此區塊只有section.about-me的一半
+        width: 50%;
+
+        //我:text-align是可繼承屬性!
+        text-align: center;
+
+        h2 {
+          font-size: 3rem;
+        }
+
+        .progress-bar-area {
+          p {
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+
+    section.resume {
+      display: flex;
+      flex-wrap: wrap;
+
+      padding: 2rem;
+
+      section.table {
+        //為了方便觀察,而設了border
+        // border: 2px solid red;
+
+        //當螢幕縮小時,使表格裡的內容不要擠在一起
+        flex: 5 0 500px;
+
+        padding: 2rem;
+
+        table {
+          border-collapse: collapse;
+
+          //覆蓋掉bootstrap預設的樣式(因為表格遮住了背後的三個綠色框框)
+          --bs-table-bg: none;
+
+          tr {
+            border-bottom: 2px solid gray;
+
+            transition: all 0.2s ease;
+
+            &:hover {
+              background-color: rgb(184, 255, 222);
+            }
+
+            td {
+              padding: 1rem;
+
+              ol,
+              ul {
+                padding-left: 1rem;
+                margin-bottom: 0;
+
+                li {
+                  margin: 0.5rem 0;
+                }
+              }
+
+              ul {
+                list-style-type: square;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    section.picture {
+      //為了方便觀察,而設了border
+      // border: 2px solid black;
+
+      flex: 1 1 500px;
+
+      //為了把照片放在中央,而設定成display: flex
+      display: flex;
+      justify-content: center;
+
+      //因為align-items預設是stretch,所以要是沒設定它的話,
+      //圖片會隨著視窗拉縮而拉長!
+      align-items: center;
+
+      //為了讓個人圖片與後面的綠色框框的位置作變換而設定成這樣
+      //(原始狀態是並排在一起,因為section.picture是一個
+      //flex container)
+      position: relative;
+
+      img {
+        width: 80%; //section.picture的80%
+      }
+
+      div.greenRect {
+        width: 30vw;
+        height: 90vh;
+
+        border: 10px solid rgb(195, 255, 200);
+
+        //注意:如果有設定position的話,它就不會去管它是flex item的特性,
+        //而是根據position的特性來排版!
+        position: absolute; //參考點是section.picture
+        top: 30px;
+        left: 80px;
+        z-index: -1;
+      }
+
+      div.greenRect2 {
+        width: 50vw;
+        height: 40vh;
+
+        border: 10px solid rgb(195, 255, 200);
+
+        position: absolute; //參考點是section.picture
+        top: 300px;
+        left: -300px; //向左偏移300px(以section.picture的左界線為起點,往左移動300px)
+        z-index: -1;
+      }
+
+      div.greenRect3 {
+        width: 50vw;
+        height: 40vh;
+
+        border: 10px solid rgb(195, 255, 200);
+
+        //注意:如果有設定position的話,它就不會去管它是flex item的特性,
+        //而是根據position的特性來排版!
+        position: absolute; //參考點是section.picture
+        top: 0px;
+        left: -100px;
+        z-index: -1;
+      }
+    }
+  }
+
+  main {
+    section.first-portfolio {
+      display: flex;
+      flex-wrap: wrap;
+
+      background-color: rgb(231, 255, 233);
+
+      div.description {
+        flex: 1 1 300px;
+
+        padding: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+          text-align: center;
+          margin-bottom: 1.5rem;
+
+          a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: black;
+          }
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+
+      div.image {
+        flex: 5 1 500px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    section.second-portfolio {
+      display: flex;
+      flex-wrap: wrap;
+
+      background-color: white;
+
+      div.description {
+        flex: 1 1 300px;
+
+        padding: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+          text-align: center;
+          margin-bottom: 1.5rem;
+          a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: black;
+          }
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+
+      div.images {
+        flex: 5 1 500px;
+
+        display: flex;
+
+        div {
+          flex: 1 1 200px;
+
+          img {
+            width: 100%;
+            padding-right: 0.5rem;
+          }
+        }
+      }
+    }
+
+    section.third-portfolio {
+      display: flex;
+      flex-wrap: wrap;
+
+      background-color: rgb(231, 255, 233);
+
+      div.description {
+        flex: 1 1 300px;
+
+        padding: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+          text-align: center;
+          margin-bottom: 1.5rem;
+          a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: black;
+          }
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+
+      div.image {
+        flex: 5 1 500px;
+
+        display: flex;
+
+        div {
+          flex: 1 1 150px;
+
+          img {
+            width: 100%;
+            padding-left: 0.5rem;
+          }
+        }
+      }
+    }
+
+    section.fourth-portfolio {
+      display: flex;
+      flex-wrap: wrap;
+
+      background-color: white;
+
+      div.description {
+        flex: 1 1 300px;
+
+        padding: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+          text-align: center;
+          margin-bottom: 1.5rem;
+          a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: black;
+          }
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+
+      div.images {
+        flex: 5 1 500px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    main {
+      //「關於我的一些事情」的部分
+      //原本設定section.description的width是50%
+      section.about-me {
+        section.description {
+          width: 80%;
+        }
+      }
+
+      //width小於800px時,直接把三個綠色框框移除!!!
+      //(當螢幕變小時,該如何處理綠色框框有很多種方式,
+      //這裡老師提供了一個最簡單的方法-就是直接移除掉哈哈)
+      section.resume {
+        //參考IPAD chapter3 p.111
+        //這樣的設定只會在section.resume此區域形成horizontal scrollbar,
+        //並不會影響到上面內容的部分
+        overflow-x: auto;
+        section.picture {
+          div.greenRect,
+          div.greenRect2,
+          div.greenRect3 {
+            display: none; //隱藏元素
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    nav {
+      //width小於500px時,就把固定的nav bar,改成不固定的!以免擋到下面的內容
+      position: static;
+      ul {
+        //width小於500px時,改成直向呈現nav bar
+        flex-direction: column;
+      }
+    }
+  }
+}

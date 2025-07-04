@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이력서</title>
+
+    <!--我自己想設定的字體哈哈-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--韓文字體for主題-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--韓文字體for正式內容-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--bootstrap的CSS-->
+    <!--要貼在我們external css的上面的原因是因為接下來我們在external css
+    寫的code才可以覆蓋bootstrap它所設定的樣式!-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/bubble.css" />
+
+    <style>
+      html {
+        /* bookmark移動時,會用「滑」的方式往下跳轉! */
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <!--target="_blank":另外開啟一個新分頁-->
+        <li><a href="#about-me">나의 대한 이야기</a></li>
+        <li><a href="./portfolio.html">포트폴리오</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!--泡泡動畫部分-->
+      <div id="background-wrap">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+        <div class="bubble x6"></div>
+        <div class="bubble x7"></div>
+        <div class="bubble x8"></div>
+        <div class="bubble x9"></div>
+        <div class="bubble x10"></div>
+      </div>
+
+      <!--綠色背景+文字的那部份-->
+      <section class="main-area">
+        <!--左邊文字+按鈕的部分-->
+        <div class="info">
+          <!--因為認為此段文字為整個網頁最重要的部分,所以設定為h1 tag-->
+          <h1 class="special-font">안녕하세요! 방익화입니다</h1>
+          <!-- <h2 class="special-font">
+            來自台灣的全端工程師，專長於後端邏輯處理與 UI
+            介面設計，具備前後端整合能力
+          </h2> -->
+
+          <h2 class="special-font">
+            대만 출신, 한중영, 코딩에 대한 열정, 높은 메타인지
+          </h2>
+          <a class="special-font" href="#resume">더 알아보기</a>
+        </div>
+        <!--右邊圖片的部分-->
+        <div class="img-area">
+          <img src="./pictures/綠背景照片.png" alt="個人照片" />
+        </div>
+      </section>
+
+      <!--「關於我的一些事情」的部分-->
+      <section id="about-me" class="about-me">
+        <section class="description">
+          <h2 class="special-font">나에 대한 이야기</h2>
+          <p>
+            대학교와 대학원에서 정보스시템을 전공하며, 백엔드 로직 처리와 웹 UI
+            디자인에 주된 관심을 두었습니다. 저는 시스템 구조와 사용자
+            인터페이스 사이의 균형을 찾는 것을 좋아하며, 기능이 원활하게
+            작동하는 것은 물론 사용자에게도 최적의 경험을 제공하기 위해 노력하고
+            있습니다.
+          </p>
+
+          <div class="progress-bar-area">
+            <p>HTML, CSS</p>
+            <div class="progress">
+              <!--width:改變長度-->
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 70%"
+              ></div>
+            </div>
+
+            <p>Python(matplotlib,selenium,web crawler,flask)</p>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 75%"
+              ></div>
+            </div>
+
+            <p>Java</p>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                role="progressbar"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 70%"
+              ></div>
+            </div>
+
+            <p>Database(MySql,MongoDB,SQLite3)</p>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                role="progressbar"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 80%"
+              ></div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!--左邊是表格和右邊是照片的那部份-->
+      <section id="resume" class="resume">
+        <!--左邊的表格-->
+        <section class="table">
+          <table>
+            <tr style="border-top: 2px solid gray">
+              <td style="width: 20%">자기소개</td>
+              <td style="width: 80%">
+                어떤 일이든 처음부터 완벽하게 해낼 수는 없다고 생각합니다.
+                하지만 그 과정에서 남들보다 두세 배 더 노력하는 것을 주저하지
+                않으며, 이러한 끈기와 노력을 통해 기대 이상의 결과물을
+                만들어내는 데 강점이 있습니다.
+              </td>
+            </tr>
+
+            <tr>
+              <td>학력</td>
+              <td>
+                <ul>
+                  <li>
+                    학사:<br />National Dong Hua University - Information
+                    Management
+                  </li>
+                  <li>석사:<br />한양대학교 - 정보시스템학과</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td>경력</td>
+              <td>
+                <ol>
+                  <li>Energy Guard Corporation</li>
+                  <li>Chyunn Environment Corporation</li>
+                  <li>Fohigh Technological Translation Corporation</li>
+                  <li>Joy English</li>
+                </ol>
+              </td>
+            </tr>
+
+            <tr>
+              <td>언어</td>
+              <td>
+                <ul>
+                  <li>중국어:모국어</li>
+                  <li>영어:중급</li>
+                  <li>한국어:중급</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td>기술 스택</td>
+              <td>
+                <img src="./ICONS/icons8-html.svg" alt="HTML5" />
+                <img src="./ICONS/icons8-css.svg" alt="CSS3" />
+                <img src="./ICONS/icons8-javascript.svg" alt="Javascript" />
+                <img src="./ICONS/icons8-java.svg" alt="Java" />
+                <img src="./ICONS/icons8-python.svg" alt="Python" />
+                <img src="./ICONS/icons8-flask.svg" alt="Flask" />
+                <img src="./ICONS/icons8-mysql.svg" alt="MySQL" />
+                <img src="./ICONS/icons8-sqlite.svg" alt="SQLite" />
+                <img src="./ICONS/icons8-mongodb.svg" alt="MongoDB" />
+                <img src="./ICONS/icons8-git.svg" alt="Git" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>포트폴리오</td>
+              <td>
+                저는 지금까지 총 5개의 프로젝트를 개발하며 프론트엔드와 백엔드
+                개발 경험을 모두 쌓았습니다. 이 중에는 자바로 만든 게임 2개,
+                파이썬과 플라스크 프레임워크 기반의 금융 웹사이트 1개, 그리고 UI
+                디자인에 집중한 프론트엔드 웹사이트 2개가 포함됩니다. 이처럼
+                다양한 프로젝트를 통해 시스템 로직 구현과 사용자 인터페이스
+                설계에 대한 실무 경험을 풍부하게 다질 수 있었습니다.
+              </td>
+            </tr>
+          </table>
+        </section>
+
+        <!--右邊的照片-->
+        <section class="picture">
+          <img src="./pictures/生活照2.png" alt="個人照片" />
+
+          <!--照片背後的綠色框框-->
+          <div class="greenRect"></div>
+          <div class="greenRect2"></div>
+          <div class="greenRect3"></div>
+        </section>
+      </section>
+    </main>
+
+    <!--bootstrap的JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--nav bar陰影的code-->
+    <script src="./app.js"></script>
+  </body>
+</html>

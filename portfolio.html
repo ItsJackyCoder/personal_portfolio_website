@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포트폴리오</title>
+
+    <!--我自己想設定的字體哈哈-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!--韓文字體for主題-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--韓文字體for正式內容-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--bootstrap的CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/bubble.css" />
+
+    <style>
+      html {
+        /* bookmark移動時,會用「滑」的方式往下跳轉! */
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <!--target="_blank":另外開啟一個新分頁-->
+        <li><a href="./index.html">나의 대한 이야기</a></li>
+        <li><a href="#">포트폴리오</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!--泡泡動畫部分-->
+      <div id="background-wrap">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+        <div class="bubble x6"></div>
+        <div class="bubble x7"></div>
+        <div class="bubble x8"></div>
+        <div class="bubble x9"></div>
+        <div class="bubble x10"></div>
+      </div>
+
+      <!--第一個作品集-->
+      <section class="first-portfolio">
+        <div class="description">
+          <h2>
+            <a
+              href="https://github.com/ItsJackyCoder/personal_finance_website"
+              alt="personal finance website"
+              target="_blank"
+              >Financial Website</a
+            >
+          </h2>
+          <p>
+            This website is designed to display the user's inventory of
+            Taiwanese currency, US dollars, and Taiwanese stocks. The stock
+            information reflects the latest closing prices from the Taiwan Stock
+            Exchange on the current trading day.
+          </p>
+
+          <p>기술 스택:<br />Python3, flask, JavaScript, HTML5, CSS3, MySQL</p>
+        </div>
+
+        <div class="image">
+          <img
+            title="personal finance website"
+            src="./pictures/personal_finance_website.png"
+            alt="personal finance website"
+          />
+        </div>
+      </section>
+
+      <!--第二個作品集-->
+      <section class="second-portfolio">
+        <div class="images">
+          <div>
+            <img
+              title="snake game1"
+              src="./pictures/snake_game1.png"
+              alt="snake game1"
+            />
+          </div>
+
+          <div>
+            <img
+              title="snake game2"
+              src="./pictures/snake_game2.png"
+              alt="snake game2"
+            />
+          </div>
+        </div>
+
+        <div class="description">
+          <h2>
+            <a
+              href="https://github.com/ItsJackyCoder/snake-game"
+              alt="snake game"
+              target="_blank"
+              >Snake Game</a
+            >
+          </h2>
+          <p>
+            This game follows the classic Snake gameplay you're familiar
+            with—each time the snake eats a fruit, its body grows longer.
+            However, if it accidentally runs into itself or crashes into a wall,
+            the game will end immediately.
+          </p>
+
+          <p>기술 스택:<br />Java, Swing(for UI)</p>
+        </div>
+      </section>
+
+      <!--第三個作品集-->
+      <section class="third-portfolio">
+        <div class="description">
+          <h2>
+            <a
+              href="https://github.com/ItsJackyCoder/bible-game-2025"
+              alt="bible game"
+              target="_blank"
+              >Bible Game</a
+            >
+          </h2>
+          <p>
+            This game is based on the Book of Exodus from the Bible and consists
+            of three main stages: Plagues, the Red Sea, and the Ten
+            Commandments.
+          </p>
+
+          <p>기술 스택:<br />Java, Swing(for UI)</p>
+        </div>
+
+        <div class="image">
+          <div>
+            <img
+              title="bible game1"
+              src="./pictures/bible_game1.png"
+              alt="bible game1"
+            />
+          </div>
+
+          <div>
+            <img
+              title="bible game2"
+              src="./pictures/bible_game2.png"
+              alt="bible game2"
+            />
+          </div>
+
+          <div>
+            <img
+              title="bible game3"
+              src="./pictures/bible_game3.png"
+              alt="bible game3"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--第四個作品集-->
+      <section class="fourth-portfolio">
+        <div class="images">
+          <div>
+            <img
+              title="explore japan"
+              src="./pictures/日本旅遊網站.png"
+              alt="explore japan"
+            />
+          </div>
+        </div>
+
+        <div class="description">
+          <h2>
+            <a
+              href="https://2025slowtrip.netlify.app/"
+              alt="explore japan"
+              target="_blank"
+              >Explore Japan</a
+            >
+          </h2>
+          <p>
+            This is a webpage designed to introduce travel information about
+            Japan. The focus is on the overall layout and visual structure,
+            without implementing interactive or functional features.
+          </p>
+
+          <p>기술 스택:<br />HTML5, CSS3, JavaScript</p>
+        </div>
+      </section>
+    </main>
+
+    <!--bootstrap的JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--nav bar陰影的code-->
+    <script src="./app.js"></script>
+  </body>
+</html>
