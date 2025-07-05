@@ -1,4 +1,4 @@
-:moneybag: Personal Portfolio Website
+📑 Personal Portfolio Website
 ===
 
 [Go to Website](https://jackyfang-portfolio.netlify.app/)
@@ -22,4 +22,4 @@ User Interface
 ![](pictures/나에대한이야기.png)
 
 #### Portfolio Page:
-![](picture/포트폴리오.png)
+![](pictures/포트폴리오.png)
