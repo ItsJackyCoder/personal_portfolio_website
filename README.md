@@ -21,5 +21,5 @@ User Interface
 #### Home Page:
 ![](pictures/나에대한이야기.png)
 
-#### Cash Inventory:
+#### Portfolio Page:
 ![](picture/포트폴리오.png)
