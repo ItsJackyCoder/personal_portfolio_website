@@ -11,14 +11,12 @@ This is a static website designed to showcase my resume and portfolio, with a st
 
 Technology Stack
 ---
-
 * Frontend:`JavaScript`, `HTML`, `CSS`
 * Frameworks: `Bootstrap`
 
 
 User Interface
 ---
-
     
 #### Home Page:
 ![](static/images/homepage.png)
