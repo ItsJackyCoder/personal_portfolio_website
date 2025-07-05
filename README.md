@@ -14,3 +14,14 @@ Technology Stack
 
 * Frontend:`JavaScript`, `HTML`, `CSS`
 * Frameworks: `Bootstrap`
+
+
+User Interface
+---
+
+    
+#### Home Page:
+![](static/images/homepage.png)
+
+#### Cash Inventory:
+![](static/images/cash_inventory.png)
