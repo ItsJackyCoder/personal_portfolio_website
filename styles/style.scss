@@ -192,7 +192,7 @@ body {
             transition: all 0.2s ease;
 
             &:hover {
-              background-color: rgb(184, 255, 222);
+              background-color: rgb(189, 246, 223);
             }
 
             td {
@@ -237,9 +237,10 @@ body {
       //flex container)
       position: relative;
 
-      display: flex;
-      flex-direction: column;
       img {
+        //因為這裡flex-direction設定成column,所以
+        //沒包在div裡面控制大小沒關西,要是並排的話,
+        //在chrome裡面可能會跑版
         width: 80%; //section.picture的80%
       }
 
@@ -524,6 +525,18 @@ body {
       ul {
         //width小於500px時,改成直向呈現nav bar
         flex-direction: column;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  main {
+    section.main-area {
+      div.info {
+        h1::before {
+          display: none;
+        }
       }
     }
   }

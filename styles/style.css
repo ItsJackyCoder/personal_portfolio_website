@@ -132,7 +132,7 @@ body main section.resume section.table table tr {
   transition: all 0.2s ease;
 }
 body main section.resume section.table table tr:hover {
-  background-color: rgb(184, 255, 222);
+  background-color: rgb(189, 246, 223);
 }
 body main section.resume section.table table tr td {
   padding: 1rem;
@@ -156,8 +156,6 @@ body main section.picture {
   justify-content: center;
   align-items: center;
   position: relative;
-  display: flex;
-  flex-direction: column;
 }
 body main section.picture img {
   width: 80%;
@@ -358,5 +356,10 @@ body main.portfolio h2.title a {
   }
   body nav ul {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 620px) {
+  main section.main-area div.info h1::before {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
