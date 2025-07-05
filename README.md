@@ -4,22 +4,13 @@
 [Go to Website](https://jackyfang-portfolio.netlify.app/)
 --
 
-Usage
+Introduce
 ---
-This website is designed to display the user's inventory of Taiwanese currency, US dollars, and Taiwanese stocks. The stock information reflects the latest closing prices from the Taiwan Stock Exchange on the current trading day.
-
-    Note:
-    Since the free version of Render is being used, the server automatically enters a dormant state 
-    after 15 minutes of inactivity. As a result, there may be a delay in loading the screen.        
-    We appreciate your understanding.
+This is a static website designed to showcase my resume and portfolio, with a strong focus on UI design. It leverages Flexbox to achieve responsive web design (RWD), incorporates Bootstrap progress bars for visual enhancement, and features CSS-based animated translucent bubbles in the background to add a dynamic and layered visual effect.
 
 
 Technology Stack
 ---
 
-* Backend:`Python3`
 * Frontend:`JavaScript`, `HTML`, `CSS`
-* Frameworks: `Bootstrap`, `Flask`
-* Database:`MySQL`(Used `SQLite3` for testing)
-* Cloud Services: `Google Cloud Platform(GCP)`, `Render`
-* API:[Global Real-Time Exchange Rate API](https://tw.rter.info/howto_currencyapi.php)
+* Frameworks: `Bootstrap`
