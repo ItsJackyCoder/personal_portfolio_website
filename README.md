@@ -19,7 +19,7 @@ User Interface
 ---
     
 #### Home Page:
-![](static/images/homepage.png)
+![](pictures/나에대한이야기.png)
 
 #### Cash Inventory:
-![](static/images/cash_inventory.png)
+![](picture/포트폴리오.png)
