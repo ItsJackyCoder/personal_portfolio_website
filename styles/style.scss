@@ -530,6 +530,7 @@ body {
   }
 }
 
+//螢幕大小小於620px時,안녕하세요那裡的綠色底色消失
 @media screen and (max-width: 620px) {
   main {
     section.main-area {
