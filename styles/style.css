@@ -220,7 +220,7 @@ body main.portfolio section.first-portfolio div.description h2 a {
   color: black;
 }
 body main.portfolio section.first-portfolio div.description p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 body main.portfolio section.first-portfolio div.image {
   flex: 5 1 500px;
@@ -254,7 +254,7 @@ body main.portfolio section.second-portfolio div.description h2 a {
   color: black;
 }
 body main.portfolio section.second-portfolio div.description p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 body main.portfolio section.second-portfolio div.images {
   flex: 5 1 500px;
@@ -293,7 +293,7 @@ body main.portfolio section.third-portfolio div.description h2 a {
   color: black;
 }
 body main.portfolio section.third-portfolio div.description p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 body main.portfolio section.third-portfolio div.image {
   flex: 5 1 500px;
@@ -332,7 +332,7 @@ body main.portfolio section.fourth-portfolio div.description h2 a {
   color: black;
 }
 body main.portfolio section.fourth-portfolio div.description p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 body main.portfolio section.fourth-portfolio div.images {
   flex: 5 1 500px;
@@ -366,7 +366,7 @@ body main.portfolio section.fifth-portfolio div.description h2 a {
   color: black;
 }
 body main.portfolio section.fifth-portfolio div.description p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 body main.portfolio section.fifth-portfolio div.image {
   flex: 5 1 500px;
