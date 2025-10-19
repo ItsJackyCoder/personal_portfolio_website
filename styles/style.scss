@@ -304,6 +304,10 @@ body {
 
       background-color: rgb(231, 255, 233);
 
+      margin: 0 20px 20px 20px;
+      border-radius: 30px;
+      overflow: hidden;
+
       div.description {
         flex: 1 1 300px;
 
@@ -325,7 +329,7 @@ body {
         }
 
         p {
-          font-size: 1rem;
+          font-size: 1.5rem;
         }
       }
 
@@ -334,6 +338,7 @@ body {
 
         img {
           width: 100%;
+          height: 100%;
         }
       }
     }
@@ -344,6 +349,10 @@ body {
 
       background-color: white;
 
+      margin: 0 20px 20px 20px;
+      border-radius: 30px;
+      overflow: hidden;
+
       div.description {
         flex: 1 1 300px;
 
@@ -364,7 +373,7 @@ body {
         }
 
         p {
-          font-size: 1rem;
+          font-size: 1.5rem;
         }
       }
 
@@ -378,6 +387,7 @@ body {
 
           img {
             width: 100%;
+            height: 100%;
             padding-right: 0.5rem;
           }
         }
@@ -389,6 +399,10 @@ body {
       flex-wrap: wrap;
 
       background-color: rgb(231, 255, 233);
+
+      margin: 0 20px 20px 20px;
+      border-radius: 30px;
+      overflow: hidden;
 
       div.description {
         flex: 1 1 300px;
@@ -410,7 +424,7 @@ body {
         }
 
         p {
-          font-size: 1rem;
+          font-size: 1.5rem;
         }
       }
 
@@ -424,6 +438,7 @@ body {
 
           img {
             width: 100%;
+            height: 100%;
             padding-left: 0.5rem;
           }
         }
@@ -435,6 +450,10 @@ body {
       flex-wrap: wrap;
 
       background-color: white;
+
+      margin: 0 20px 20px 20px;
+      border-radius: 30px;
+      overflow: hidden;
 
       div.description {
         flex: 1 1 300px;
@@ -456,7 +475,7 @@ body {
         }
 
         p {
-          font-size: 1rem;
+          font-size: 1.5rem;
         }
       }
 
@@ -465,6 +484,52 @@ body {
 
         img {
           width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    section.fifth-portfolio {
+      display: flex;
+      flex-wrap: wrap;
+
+      background-color: rgb(231, 255, 233);
+
+      margin: 0 20px 20px 20px;
+      border-radius: 30px;
+      overflow: hidden;
+
+      div.description {
+        flex: 1 1 300px;
+
+        padding: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+          text-align: center;
+          margin-bottom: 1.5rem;
+
+          a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: black;
+          }
+        }
+
+        p {
+          font-size: 1.5rem;
+        }
+      }
+
+      div.image {
+        flex: 5 1 500px;
+
+        img {
+          width: 100%;
+          height: 100%;
         }
       }
     }
