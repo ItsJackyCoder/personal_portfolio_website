@@ -1,4 +1,3 @@
-//照著打就好,因為還沒學到JS
 //nav bar陰影的code
 let nav = document.querySelector("nav");
 
